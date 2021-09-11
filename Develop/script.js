@@ -18,9 +18,9 @@ function generatePassword()
 
   if (passSc == true)
     {
-    character += "+-!@#$%^&()?><";
-    console.log("passSc is True");
-    } 
+      character += "+-!@#$%^&()?><";
+      console.log("passSc is True");
+    }
   if (passNM == true)
     {
     character += "0123456789";
@@ -35,7 +35,7 @@ function generatePassword()
     {
     character += "abcdefghijklmnopqrstuvwxyz";
     console.log("passLC is True");
-    }
+    }  
 
     console.log(character)
 
