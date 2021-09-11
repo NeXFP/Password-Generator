@@ -1,6 +1,7 @@
 // Assignment code here
 function generatePassword()
 {
+  //Do while loop to prompt for password length for user input
   do {
     var passlength = window.prompt("How long would you like your password to be?");
     console.log("Length of Password: " + passlength);
