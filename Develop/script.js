@@ -1,21 +1,22 @@
 // Assignment code here
 function generatePassword()
 {
-  //Do while loop to prompt for password length for user input.
+//Do while loop to prompt for password length for user input.
   do {
     var passlength = window.prompt("How long would you like your password to be?");
     console.log("Length of Password: " + passlength);
   } while (passlength < 8 || passlength > 128)
 
-  //Variables for window confirms for each question prompt.
+//Variables for window confirms for each question prompt.
   var passSc = window.confirm("Do you want symbols in your password?");
   var passNM = window.confirm("Do you want numerical characters in your password?");
   var passUC = window.confirm("Do you want uppercase characters in your password?");
   var passLC = window.confirm("Do you want lowercase characters in your password?");
 
-  var character = " ";
+  var character = "";
   var result = [];
 
+//If statements determining characters for each variable
   if (passSc == true)
     {
       character += "+-!@#$%^&()?><";
